@@ -8,4 +8,6 @@ else:
 
 # = Atribui valor
 # == Representa teste de igualdade
-    
+# Identação sinaliza um bloco
+# : Indica inicio do bloco
+# Recuo sinaliza fim do bloco
