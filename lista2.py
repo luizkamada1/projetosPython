@@ -6,3 +6,6 @@ if resto == 0:
 else:
     print(num, "É impar")
 
+# = Atribui valor
+# == Representa teste de igualdade
+    
