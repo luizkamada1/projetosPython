@@ -87,3 +87,48 @@ else:
     print("Divisão não possivel")
 
 print("O resultado vale",resultado)
+
+# EX 10
+import math
+a = float(input("Valor A:"))
+b = float(input("Valor B:"))
+c = float(input("Valor C:"))
+
+delta = b**2 - 4 * a * c
+x1 = (-b + math.sqrt(delta)) / (2 * a)
+x2 = (-b - math.sqrt(delta)) / (2 * a)
+
+print("X1 =", x1, "X2 =", x2)
+
+# EX 11
+preco = float(input("Informe o valor:"))
+tipo = int(input("Escolha o codigo:"))
+
+if tipo == 1:
+    novo_preco = preco * 0.9
+elif tipo == 2:
+    novo_preco = preco * 0.95
+elif tipo == 3:
+    novo_preco = preco
+elif tipo == 4:
+    novo_preco = preco * 1.07
+
+print("O valor pago será", novo_preco)
+
+# EX 12
+n_aulas_ministrada = int(input("Numero de aulas ministradas:"))
+n_aulas_assistida = int(input("Numero de aulas assistidas:"))
+nota_1semestre = float(input("Nota 1 semestre:"))
+nota_2semestre = float(input("Nota 2 semestre:"))
+
+if n_aulas_assistida >= (n_aulas_ministrada*0.7):
+    resultado = nota_1semestre * 0.4 + nota_2semestre * 0.6
+    if resultado >= 5:
+        print("Aprovado")
+    else:
+        print("Reprovado") 
+else:
+    print("Reprovado")
+
+
+
