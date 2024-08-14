@@ -46,6 +46,12 @@ def embaralha(deck: list):
         deck[i] = deck[j]
         deck[j] = aux    
 
+def to_str_mao(hand:list) :
+    resp = ""
+    for cartas in hand:
+        resp = resp + to_str(cartas) + ""
+    return resp
+
 if __name__ == '__main__':
     monte = cria('normal')
     #for carta in monte:
